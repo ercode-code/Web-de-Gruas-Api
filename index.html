@@ -1,145 +1,171 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grúas Api | Rescate 4x4 y Remolque de Plataforma</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grúas Api | Rescate 4x4 y Remolque de Plataforma</title>
+  
+  <!-- Icono (Favicon) -->
+  <link rel="icon" type="image/png" href="Imagenes. API Grúas/tow-truck.png" />
+  
+  <!-- Meta Etiquetas Optimadas para SEO -->
+  <meta name="description" content="Servicio de grúas 24/7 en San José, Costa Rica. Especialistas en rescate vehicular 4x4 y transporte en grúa de plataforma. Asistencia rápida y profesional." />
+  <meta name="keywords" content="Grúas Api, Rescate 4x4, Remolque de Plataforma, San José, Costa Rica, Grúa 24 horas, Remolque de carros, Asistencia vial Costa Rica, Factura electrónica" />
+  <meta name="author" content="Grúas Api" />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Grúas Api | Rescate 4x4 y Remolque de Plataforma" />
+  <meta property="og:description" content="Servicio de grúas 24/7 en Costa Rica. Rescate vehicular en cualquier terreno y grúa de plataforma de alta seguridad." />
+  <meta property="og:image" content="Imagenes. API Grúas/Grúas Api.png" />
+  <meta property="og:url" content="https://gruasapi.com" />
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="Grúas Api | Rescate 4x4 y Remolque de Plataforma" />
+  <meta property="twitter:description" content="Servicio de grúas 24/7 en Costa Rica. Rescate vehicular en cualquier terreno y grúa de plataforma de alta seguridad." />
+  <meta property="twitter:image" content="Imagenes. API Grúas/Grúas Api.png" />
+
+  <!-- Color de tema para navegadores móviles -->
+  <meta name="theme-color" content="#f27f0d" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <img src="Imagenes. API Grúas/Grúas Api.png" alt="Grúas Api Logo" />
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="equipo.html">Nuestro Equipo</a></li>
+          <li>
+            <a href="agendar.html" class="btn btn-primary">Agendar</a>
+          </li>
+        </ul>
+        <div class="menu-toggle" id="menuToggle">
+          &#9776;
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
       <div class="container">
-        <nav>
-          <div class="logo">
-            <img src="Imagenes. API Grúas/Grúas Api.png" alt="Grúas Api Logo" />
-          </div>
-          <ul class="nav-links" id="navLinks">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="equipo.html">Nuestro Equipo</a></li>
-            <li>
-              <a href="agendar.html" class="btn btn-primary"
-                >Agendar</a
-              >
-            </li>
-          </ul>
-          <div class="menu-toggle" id="menuToggle">
-            &#9776;
-          </div>
-        </nav>
-      </div>
-    </header>
-
-    <main>
-      <section class="hero">
-        <div class="container">
-          <h2 style="color: var(--accent-orange); font-size: 5rem; font-weight: 900; text-transform: uppercase; letter-spacing: 5px; margin-bottom: 5px; opacity: 0.9;">Grúas Api</h2>
-          <h1 class="gradient-text">
-            Rescate y Transporte <br />de Otro Nivel
-          </h1>
-          <p>
-            Especialistas en Grúa de Plataforma y Rescate 4x4. <br />Seguridad,
-            rapidez y profesionalismo en todo tipo de terrenos.
-          </p>
-          <div class="hero-btns">
-            <a href="agendar.html" class="btn btn-primary">Agendar Ahora</a>
-            <a
-              href="equipo.html"
-              class="btn btn-secondary"
-              >Ver Equipo</a
-            >
-          </div>
-        </div>
-      </section>
-
-      <section id="servicios">
-        <div class="container">
-          <h2 class="section-title">Nuestros Servicios</h2>
-          <div class="grid">
-            <div class="card">
-              <h3>Grúa de Plataforma</h3>
-              <p>
-                Transporte seguro para vehículos livianos, de lujo y deportivos.
-                Plataforma hidráulica de bajo ángulo.
-              </p>
-            </div>
-            <div class="card">
-              <h3>Rescate Vehicular 4x4</h3>
-              <p>
-                Extracción de vehículos atascados en barro, arena o terrenos
-                difíciles con equipo especializado 4x4.
-              </p>
-            </div>
-            <div class="card">
-              <h3>Asistencia 24/7</h3>
-              <p>
-                Estamos disponibles en cualquier momento y lugar para brindarte
-                la ayuda que necesitas.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="porque-nosotros">
-        <div class="container">
-          <h2 class="section-title">¿Por qué elegir Grúas Api?</h2>
-          <div class="grid">
-            <div class="card">
-              <h4 style="color: var(--accent-yellow)">Experiencia</h4>
-              <p>Años de trayectoria en el sector nos avalan.</p>
-            </div>
-            <div class="card">
-              <h4 style="color: var(--accent-yellow)">Equipo Moderno</h4>
-              <p>
-                Contamos con tecnología de punta para el rescate y transporte.
-              </p>
-            </div>
-            <div class="card">
-              <h4 style="color: var(--accent-yellow)">Compromiso</h4>
-              <p>Tu vehículo está en las mejores manos.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="container">
-        <div class="footer-contact">
-          <div class="footer-info">
-            <h4>Ubicación</h4>
-            <p>San José, Costa Rica</p>
-          </div>
-          <div class="footer-info">
-            <h4>Contacto</h4>
-            <a href="mailto:ntrasportes@gmail.com">ntrasportes@gmail.com</a>
-            <a href="https://wa.me/50670764997">+506 7076 4997</a>
-          </div>
-          <div class="footer-info">
-            <h4>Servicios</h4>
-            <p>Rescate 4x4 24/7</p>
-            <p>Grúa de Plataforma</p>
-          </div>
-          <div class="footer-info" style="border: 1px dashed var(--accent-yellow); padding: 15px; border-radius: 10px; text-align: center;">
-            <p style="color: var(--accent-yellow); font-weight: 700; margin: 0;">🧾 Factura Electrónica</p>
-          </div>
-        </div>
-        <div style="text-align: center; color: var(--text-secondary); padding: 20px 0; border-top: 1px solid var(--glass-border);">
-          <p>&copy; 2026 Grúas Api. Todos los derechos reservados.</p>
+        <h2
+          style="color: var(--accent-orange); font-size: 5rem; font-weight: 900; text-transform: uppercase; letter-spacing: 5px; margin-bottom: 5px; opacity: 0.9;">
+          Grúas Api</h2>
+        <h1 class="gradient-text">
+          Rescate y Transporte <br />de Otro Nivel
+        </h1>
+        <p>
+          Especialistas en Grúa de Plataforma y Rescate 4x4. <br />Seguridad,
+          rapidez y profesionalismo en todo tipo de terrenos.
+        </p>
+        <div class="hero-btns">
+          <a href="agendar.html" class="btn btn-primary">Agendar Ahora</a>
+          <a href="equipo.html" class="btn btn-secondary">Ver Equipo</a>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <!-- Floating WhatsApp -->
-    <a href="https://wa.me/50670764997" class="whatsapp-float" target="_blank">
-      <svg viewBox="0 0 32 32" class="whatsapp-icon" fill="currentColor">
-        <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.733 5.476 2.016 7.787l-2.016 7.356 7.531-1.976c2.251 1.201 4.821 1.889 7.548 1.889 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.32c-2.483 0-4.819-0.655-6.837-1.802l-0.489-0.281-4.484 1.176 1.2-4.381-0.309-0.491c-1.231-1.956-1.944-4.275-1.944-6.757 0-7.345 5.975-13.32 13.32-13.32s13.32 5.975 13.32 13.32c0 7.345-5.975 13.32-13.32 13.32zM22.78 18.682c-0.371-0.185-2.193-1.082-2.535-1.206-0.341-0.124-0.59-0.185-0.838 0.185s-0.963 1.206-1.18 1.455c-0.217 0.248-0.434 0.279-0.806 0.093-0.371-0.185-1.569-0.579-2.986-1.844-1.103-0.983-1.847-2.198-2.063-2.57-0.217-0.372-0.023-0.572 0.162-0.756 0.167-0.165 0.371-0.434 0.557-0.651 0.186-0.217 0.248-0.372 0.372-0.62 0.124-0.248 0.062-0.465-0.031-0.651-0.093-0.185-0.838-2.016-1.149-2.768-0.302-0.732-0.611-0.633-0.838-0.645-0.217-0.011-0.465-0.013-0.713-0.013s-0.651 0.093-0.992 0.465c-0.341 0.372-1.302 1.272-1.302 3.102s1.334 3.6 1.519 3.849c0.185 0.248 2.625 4.009 6.357 5.613 0.888 0.382 1.581 0.61 2.122 0.781 0.891 0.283 1.703 0.243 2.345 0.147 0.715-0.107 2.193-0.898 2.503-1.767 0.311-0.868 0.311-1.612 0.217-1.767-0.093-0.155-0.341-0.248-0.713-0.434z"></path>
-      </svg>
-    </a>
-    <script src="script.js"></script>
-  </body>
+    <section id="servicios">
+      <div class="container">
+        <h2 class="section-title">Nuestros Servicios</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Grúa de Plataforma</h3>
+            <p>
+              Transporte seguro para vehículos livianos, de lujo y deportivos.
+              Plataforma hidráulica de bajo ángulo.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Rescate Vehicular 4x4</h3>
+            <p>
+              Extracción de vehículos atascados en barro, arena o terrenos
+              difíciles con equipo especializado 4x4.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Asistencia 24/7</h3>
+            <p>
+              Estamos disponibles en cualquier momento y lugar para brindarte
+              la ayuda que necesitas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="porque-nosotros">
+      <div class="container">
+        <h2 class="section-title">¿Por qué elegir Grúas Api?</h2>
+        <div class="grid">
+          <div class="card">
+            <h4 style="color: var(--accent-yellow)">Experiencia</h4>
+            <p>Años de trayectoria en el sector nos avalan.</p>
+          </div>
+          <div class="card">
+            <h4 style="color: var(--accent-yellow)">Equipo Moderno</h4>
+            <p>
+              Contamos con tecnología de punta para el rescate y transporte.
+            </p>
+          </div>
+          <div class="card">
+            <h4 style="color: var(--accent-yellow)">Compromiso</h4>
+            <p>Tu vehículo está en las mejores manos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-contact">
+        <div class="footer-info">
+          <h4>Ubicación</h4>
+          <p>San José, Costa Rica</p>
+        </div>
+        <div class="footer-info">
+          <h4>Contacto</h4>
+          <a href="mailto:ntrasportes@gmail.com">ntrasportes@gmail.com</a>
+          <a href="https://wa.me/50670764997">+506 7076 4997</a>
+        </div>
+        <div class="footer-info">
+          <h4>Servicios</h4>
+          <p>Rescate 4x4 24/7</p>
+          <p>Grúa de Plataforma</p>
+        </div>
+        <div class="footer-info"
+          style="border: 1px dashed var(--accent-yellow); padding: 15px; border-radius: 10px; text-align: center;">
+          <p style="color: var(--accent-yellow); font-weight: 700; margin: 0;">🧾 Factura Electrónica</p>
+        </div>
+      </div>
+      <div
+        style="text-align: center; color: var(--text-secondary); padding: 20px 0; border-top: 1px solid var(--glass-border);">
+        <p>&copy; 2026 Grúas Api. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/50670764997" class="whatsapp-float" target="_blank">
+    <svg viewBox="0 0 32 32" class="whatsapp-icon" fill="currentColor">
+      <path
+        d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.733 5.476 2.016 7.787l-2.016 7.356 7.531-1.976c2.251 1.201 4.821 1.889 7.548 1.889 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.32c-2.483 0-4.819-0.655-6.837-1.802l-0.489-0.281-4.484 1.176 1.2-4.381-0.309-0.491c-1.231-1.956-1.944-4.275-1.944-6.757 0-7.345 5.975-13.32 13.32-13.32s13.32 5.975 13.32 13.32c0 7.345-5.975 13.32-13.32 13.32zM22.78 18.682c-0.371-0.185-2.193-1.082-2.535-1.206-0.341-0.124-0.59-0.185-0.838 0.185s-0.963 1.206-1.18 1.455c-0.217 0.248-0.434 0.279-0.806 0.093-0.371-0.185-1.569-0.579-2.986-1.844-1.103-0.983-1.847-2.198-2.063-2.57-0.217-0.372-0.023-0.572 0.162-0.756 0.167-0.165 0.371-0.434 0.557-0.651 0.186-0.217 0.248-0.372 0.372-0.62 0.124-0.248 0.062-0.465-0.031-0.651-0.093-0.185-0.838-2.016-1.149-2.768-0.302-0.732-0.611-0.633-0.838-0.645-0.217-0.011-0.465-0.013-0.713-0.013s-0.651 0.093-0.992 0.465c-0.341 0.372-1.302 1.272-1.302 3.102s1.334 3.6 1.519 3.849c0.185 0.248 2.625 4.009 6.357 5.613 0.888 0.382 1.581 0.61 2.122 0.781 0.891 0.283 1.703 0.243 2.345 0.147 0.715-0.107 2.193-0.898 2.503-1.767 0.311-0.868 0.311-1.612 0.217-1.767-0.093-0.155-0.341-0.248-0.713-0.434z">
+      </path>
+    </svg>
+  </a>
+  <script src="script.js"></script>
+</body>
+
 </html>
