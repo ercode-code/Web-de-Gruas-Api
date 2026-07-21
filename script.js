@@ -5,13 +5,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (menuToggle && navLinks) {
     menuToggle.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
+      const isActive = navLinks.classList.toggle("active");
+      menuToggle.classList.toggle("active", isActive);
+      menuToggle.setAttribute("aria-expanded", isActive);
     });
 
     // Close menu when clicking a link
     navLinks.querySelectorAll("a").forEach(link => {
       link.addEventListener("click", () => {
         navLinks.classList.remove("active");
+        menuToggle.classList.remove("active");
+        menuToggle.setAttribute("aria-expanded", false);
       });
     });
   }

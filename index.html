@@ -14,13 +14,18 @@
   <meta name="keywords" content="Grúas Api, Rescate 4x4, Remolque de Plataforma, San José, Costa Rica, Grúa 24 horas, Remolque de carros, Asistencia vial Costa Rica, Factura electrónica" />
   <meta name="author" content="Grúas Api" />
   <meta name="robots" content="index, follow" />
+  <meta name="geo.region" content="CR-SJ" />
+  <meta name="geo.placename" content="San José, Costa Rica" />
+  <link rel="canonical" href="https://gruasapi.com/" />
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Grúas Api | Rescate 4x4 y Remolque de Plataforma" />
+  <meta property="og:title" content="Grúas Api | Rescate 4x4 y Remolque de Plataforma en Costa Rica" />
   <meta property="og:description" content="Servicio de grúas 24/7 en Costa Rica. Rescate vehicular en cualquier terreno y grúa de plataforma de alta seguridad." />
-  <meta property="og:image" content="Imagenes. API Grúas/Grúas Api.png" />
-  <meta property="og:url" content="https://gruasapi.com" />
+  <meta property="og:image" content="https://gruasapi.com/Imagenes. API Grúas/Grúas Api.png" />
+  <meta property="og:url" content="https://gruasapi.com/" />
+  <meta property="og:locale" content="es_CR" />
+  <meta property="og:site_name" content="Grúas Api" />
   
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
@@ -33,6 +38,42 @@
 
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+
+  <!-- Schema JSON-LD: Negocio Local (clave para Google en Costa Rica) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Grúas Api",
+    "description": "Servicio profesional de grúas 24/7 en Costa Rica. Especialistas en rescate vehicular 4x4 y grúa de plataforma hidráulica.",
+    "url": "https://gruasapi.com",
+    "telephone": "+50670764997",
+    "email": "ntrasportes@gmail.com",
+    "image": "https://gruasapi.com/Imagenes. API Grúas/Grúas Api.png",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "San José",
+      "addressCountry": "CR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "9.9281",
+      "longitude": "-84.0907"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
+    "priceRange": "$$",
+    "areaServed": {
+      "@type": "Country",
+      "name": "Costa Rica"
+    },
+    "serviceType": ["Grúa de plataforma", "Rescate 4x4", "Asistencia vial 24/7"]
+  }
+  </script>
 </head>
 
 <body>
@@ -49,9 +90,11 @@
             <a href="agendar.html" class="btn btn-primary">Agendar</a>
           </li>
         </ul>
-        <div class="menu-toggle" id="menuToggle">
-          &#9776;
-        </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </nav>
     </div>
   </header>

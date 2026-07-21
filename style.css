@@ -217,19 +217,57 @@ select:focus {
   border-color: var(--accent-orange);
 }
 
+/* Oculto por defecto en desktop, visible solo en móvil */
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .menu-toggle {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 20px;
     cursor: pointer;
-    font-size: 1.8rem;
-    color: var(--text-primary);
+    background: transparent;
+    border: none;
+    padding: 0;
     z-index: 101;
-    transition: var(--transition);
+    position: relative;
   }
-  
-  .menu-toggle:hover {
-    color: var(--accent-orange);
+
+  .menu-toggle span {
+    display: block;
+    height: 2.5px;
+    width: 100%;
+    background-color: var(--text-primary);
+    border-radius: 3px;
+    transition: transform 0.35s cubic-bezier(0.23, 1, 0.32, 1),
+                opacity 0.25s ease,
+                background-color 0.3s ease;
+    transform-origin: center;
+  }
+
+  /* Animación a X cuando el menú está activo */
+  .menu-toggle.active span:nth-child(1) {
+    transform: translateY(8.75px) rotate(45deg);
+    background-color: var(--accent-orange);
+  }
+
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+
+  .menu-toggle.active span:nth-child(3) {
+    transform: translateY(-8.75px) rotate(-45deg);
+    background-color: var(--accent-orange);
   }
 
   .nav-links {
@@ -340,9 +378,7 @@ select:focus {
   }
 }
 
-.menu-toggle {
-  display: none;
-}
+
 
 .btn-secondary {
   border: 1px solid var(--accent-orange);
