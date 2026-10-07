@@ -20,6 +20,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // Sticky Navbar Glass Effect on Scroll
+  const header = document.querySelector("header");
+  if (header) {
+    const handleScroll = () => {
+      if (window.scrollY > 25) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+  }
+
   const scheduleForm = document.getElementById("scheduleForm");
   const responseMessage = document.getElementById("responseMessage");
 
@@ -59,6 +73,36 @@ document.addEventListener("DOMContentLoaded", () => {
         );
         submitBtn.disabled = false;
         submitBtn.innerText = "Confirmar Solicitud";
+      }
+    });
+  }
+
+  // Copiar Correo al Portapapeles
+  const copyEmailBtn = document.getElementById("copyEmailBtn");
+  const copyEmailText = document.getElementById("copyEmailText");
+  if (copyEmailBtn && copyEmailText) {
+    copyEmailBtn.addEventListener("click", async () => {
+      const email = copyEmailBtn.getAttribute("data-email") || "ntrasportes@gmail.com";
+      try {
+        await navigator.clipboard.writeText(email);
+        const originalText = copyEmailText.innerText;
+        copyEmailText.innerText = "¡Copiado!";
+        copyEmailBtn.style.borderColor = "var(--accent-orange)";
+        setTimeout(() => {
+          copyEmailText.innerText = originalText;
+          copyEmailBtn.style.borderColor = "";
+        }, 2000);
+      } catch (err) {
+        const textarea = document.createElement("textarea");
+        textarea.value = email;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textarea);
+        copyEmailText.innerText = "¡Copiado!";
+        setTimeout(() => {
+          copyEmailText.innerText = "Copiar Correo";
+        }, 2000);
       }
     });
   }

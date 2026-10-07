@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agendar Servicio de Grúa | Grúas Api Costa Rica</title>
+    <title>Contacto Directo | Grúas Api Costa Rica</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="Imagenes. API Grúas/tow-truck.png" />
@@ -35,7 +35,7 @@
 
     <meta name="theme-color" content="#f27f0d" />
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=2.0">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -43,12 +43,15 @@
         <div class="container">
             <nav>
                 <div class="logo">
-                    <img src="Imagenes. API Grúas/Grúas Api.png" alt="Grúas Api Logo">
+                    <a href="index.html" class="logo-link">
+                        <img src="Imagenes. API Grúas/Grúas Api.png" alt="Grúas Api Logo">
+                        <span class="logo-text">Grúas <span class="logo-highlight">Api</span></span>
+                    </a>
                 </div>
                 <ul class="nav-links" id="navLinks">
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="equipo.html">Nuestro Equipo</a></li>
-                    <li><a href="agendar.html" class="btn btn-primary">Agendar</a></li>
+                    <li><a href="agendar.html" class="btn btn-primary active">Contacto</a></li>
                 </ul>
                 <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
                     <span></span>
@@ -60,41 +63,112 @@
     </header>
 
     <main>
-        <section class="container" style="padding-top: 50px;">
-            <h1 class="gradient-text" style="text-align: center; margin-bottom: 20px;">Agendar Servicio</h1>
-            <p style="text-align: center; color: var(--text-secondary); margin-bottom: 50px;">Reserva tu servicio de forma rápida. Nos contactaremos contigo pronto.</p>
+        <section class="container contact-section">
+            <div class="contact-header">
+                <span class="contact-pill-badge">Atención Inmediata</span>
+                <h1 class="gradient-text">Contacto Directo</h1>
+                <p class="contact-subtitle">
+                    ¿Necesitas asistencia en carretera o cotizar un servicio de grúa? Comunícate directamente con nuestro equipo las 24 horas del día.
+                </p>
+            </div>
 
-            <div class="form-container">
-                <form id="scheduleForm">
-                    <div class="form-group">
-                        <label for="nombre">Nombre Completo</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+            <div class="contact-grid">
+                <!-- Tarjeta de WhatsApp -->
+                <div class="contact-card contact-card-whatsapp">
+                    <div class="contact-card-badge status-online">
+                        <span class="status-dot"></span> Disponible 24/7
                     </div>
-                    <div class="form-group">
-                        <label for="telefono">Teléfono de Contacto</label>
-                        <input type="tel" id="telefono" name="telefono" placeholder="Ej. 8888-8888" required>
+                    <div class="contact-icon-wrapper whatsapp-glow">
+                        <svg viewBox="0 0 32 32" width="36" height="36" style="width: 36px; height: 36px; max-width: 36px; max-height: 36px;" class="contact-icon" fill="currentColor">
+                            <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.733 5.476 2.016 7.787l-2.016 7.356 7.531-1.976c2.251 1.201 4.821 1.889 7.548 1.889 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.32c-2.483 0-4.819-0.655-6.837-1.802l-0.489-0.281-4.484 1.176 1.2-4.381-0.309-0.491c-1.231-1.956-1.944-4.275-1.944-6.757 0-7.345 5.975-13.32 13.32-13.32s13.32 5.975 13.32 13.32c0 7.345-5.975 13.32-13.32 13.32zM22.78 18.682c-0.371-0.185-2.193-1.082-2.535-1.206-0.341-0.124-0.59-0.185-0.838 0.185s-0.963 1.206-1.18 1.455c-0.217 0.248-0.434 0.279-0.806 0.093-0.371-0.185-1.569-0.579-2.986-1.844-1.103-0.983-1.847-2.198-2.063-2.57-0.217-0.372-0.023-0.572 0.162-0.756 0.167-0.165 0.371-0.434 0.557-0.651 0.186-0.217 0.248-0.372 0.372-0.62 0.124-0.248 0.062-0.465-0.031-0.651-0.093-0.185-0.838-2.016-1.149-2.768-0.302-0.732-0.611-0.633-0.838-0.645-0.217-0.011-0.465-0.013-0.713-0.013s-0.651 0.093-0.992 0.465c-0.341 0.372-1.302 1.272-1.302 3.102s1.334 3.6 1.519 3.849c0.185 0.248 2.625 4.009 6.357 5.613 0.888 0.382 1.581 0.61 2.122 0.781 0.891 0.283 1.703 0.243 2.345 0.147 0.715-0.107 2.193-0.898 2.503-1.767 0.311-0.868 0.311-1.612 0.217-1.767-0.093-0.155-0.341-0.248-0.713-0.434z"></path>
+                        </svg>
                     </div>
-                    <div class="form-group">
-                        <label for="servicio">Tipo de Servicio</label>
-                        <select id="servicio" name="servicio" required>
-                            <option value="" disabled selected>Selecciona un servicio</option>
-                            <option value="plataforma">Grúa de Plataforma</option>
-                            <option value="rescate">Rescate 4x4</option>
-                            <option value="otro">Asistencia General</option>
-                        </select>
+                    <h2>WhatsApp y Llamadas</h2>
+                    <p class="contact-desc">
+                        Respuesta ágil y coordinación inmediata de rescate 4x4 o grúa de plataforma en cualquier momento.
+                    </p>
+                    <div class="contact-highlight-value">
+                        <a href="https://wa.me/50670764997" target="_blank" rel="noopener noreferrer">+506 7076-4997</a>
                     </div>
-                    <div class="form-group">
-                        <label for="ubicacion">Ubicación del Servicio</label>
-                        <input type="text" id="ubicacion" name="ubicacion" placeholder="Ej. San José, Costa Rica" required>
+                    <div class="contact-actions">
+                        <a href="https://wa.me/50670764997?text=Hola,%20necesito%20asistencia%20de%20gr%C3%BAa" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-direct">
+                            Chatear por WhatsApp
+                        </a>
                     </div>
-                    <div class="form-group">
-                        <label for="fecha">Fecha y Hora</label>
-                        <input type="datetime-local" id="fecha" name="fecha" required>
+                </div>
+
+                <!-- Tarjeta Grande de Correo Electrónico -->
+                <div class="contact-card contact-card-email">
+                    <div class="contact-card-badge email-badge">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                        </svg>
+                        Cotizaciones y Facturación
                     </div>
-                    <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 20px;">Confirmar Solicitud</button>
-                </form>
-                <div id="responseMessage" style="margin-top: 20px; text-align: center; display: none;">
-                    <p style="color: var(--accent-yellow);">¡Solicitud enviada con éxito! Nos comunicaremos contigo en breve.</p>
+                    <div class="contact-icon-wrapper email-glow">
+                        <svg viewBox="0 0 24 24" width="36" height="36" style="width: 36px; height: 36px; max-width: 36px; max-height: 36px;" class="contact-icon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                        </svg>
+                    </div>
+                    <h2>Correo Electrónico</h2>
+                    <p class="contact-desc">
+                        Ideal para solicitar facturación electrónica, envío de comprobantes, convenios corporativos o traslados programados.
+                    </p>
+                    <div class="contact-highlight-value">
+                        <a href="mailto:ntrasportes@gmail.com">ntrasportes@gmail.com</a>
+                    </div>
+                    <div class="contact-actions contact-email-actions">
+                        <a href="mailto:ntrasportes@gmail.com?subject=Consulta%20Servicio%20de%20Gr%C3%BAas%20Api" class="btn btn-primary">
+                            Enviar Correo
+                        </a>
+                        <button type="button" class="btn btn-secondary" id="copyEmailBtn" data-email="ntrasportes@gmail.com">
+                            <span id="copyEmailText">Copiar Correo</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tira de Beneficios / Facturación -->
+            <div class="contact-features-strip">
+                <div class="contact-feature-item">
+                    <span class="feature-icon">
+                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--accent-orange)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/>
+                            <path d="M8 7h8"/>
+                            <path d="M8 11h8"/>
+                            <path d="M8 15h5"/>
+                        </svg>
+                    </span>
+                    <div>
+                        <h4>Factura Electrónica</h4>
+                        <p>Facturación electrónica autorizada por el Ministerio de Hacienda para personas y empresas.</p>
+                    </div>
+                </div>
+                <div class="contact-feature-item">
+                    <span class="feature-icon">
+                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--accent-orange)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </span>
+                    <div>
+                        <h4>Todo Costa Rica</h4>
+                        <p>Base en San José con cobertura a lo largo de todo el territorio nacional.</p>
+                    </div>
+                </div>
+                <div class="contact-feature-item">
+                    <span class="feature-icon">
+                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--accent-orange)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </span>
+                    <div>
+                        <h4>Guardia 24/7</h4>
+                        <p>Disponibilidad real los 365 días del año para cualquier emergencia vehicular.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -118,7 +192,15 @@
                     <p>Grúa de Plataforma</p>
                 </div>
                 <div class="footer-info" style="border: 1px dashed var(--accent-yellow); padding: 15px; border-radius: 10px; text-align: center;">
-                    <p style="color: var(--accent-yellow); font-weight: 700; margin: 0;">🧾 Factura Electrónica</p>
+                    <p style="color: var(--accent-yellow); font-weight: 700; margin: 0; display: inline-flex; align-items: center; justify-content: center; gap: 6px;">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/>
+                            <path d="M8 7h8"/>
+                            <path d="M8 11h8"/>
+                            <path d="M8 15h5"/>
+                        </svg>
+                        Factura Electrónica
+                    </p>
                 </div>
             </div>
             <div style="text-align: center; color: var(--text-secondary); padding: 20px 0; border-top: 1px solid var(--glass-border);">
@@ -128,12 +210,15 @@
     </footer>
 
     <!-- Floating WhatsApp -->
-    <a href="https://wa.me/50670764997" class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/50670764997" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Escríbenos por WhatsApp 24/7">
+        <span class="whatsapp-pulse"></span>
+        <span class="whatsapp-badge"></span>
         <svg viewBox="0 0 32 32" class="whatsapp-icon" fill="currentColor">
             <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.733 5.476 2.016 7.787l-2.016 7.356 7.531-1.976c2.251 1.201 4.821 1.889 7.548 1.889 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.32c-2.483 0-4.819-0.655-6.837-1.802l-0.489-0.281-4.484 1.176 1.2-4.381-0.309-0.491c-1.231-1.956-1.944-4.275-1.944-6.757 0-7.345 5.975-13.32 13.32-13.32s13.32 5.975 13.32 13.32c0 7.345-5.975 13.32-13.32 13.32zM22.78 18.682c-0.371-0.185-2.193-1.082-2.535-1.206-0.341-0.124-0.59-0.185-0.838 0.185s-0.963 1.206-1.18 1.455c-0.217 0.248-0.434 0.279-0.806 0.093-0.371-0.185-1.569-0.579-2.986-1.844-1.103-0.983-1.847-2.198-2.063-2.57-0.217-0.372-0.023-0.572 0.162-0.756 0.167-0.165 0.371-0.434 0.557-0.651 0.186-0.217 0.248-0.372 0.372-0.62 0.124-0.248 0.062-0.465-0.031-0.651-0.093-0.185-0.838-2.016-1.149-2.768-0.302-0.732-0.611-0.633-0.838-0.645-0.217-0.011-0.465-0.013-0.713-0.013s-0.651 0.093-0.992 0.465c-0.341 0.372-1.302 1.272-1.302 3.102s1.334 3.6 1.519 3.849c0.185 0.248 2.625 4.009 6.357 5.613 0.888 0.382 1.581 0.61 2.122 0.781 0.891 0.283 1.703 0.243 2.345 0.147 0.715-0.107 2.193-0.898 2.503-1.767 0.311-0.868 0.311-1.612 0.217-1.767-0.093-0.155-0.341-0.248-0.713-0.434z"></path>
         </svg>
+        <span class="whatsapp-tooltip">¿Emergencia? Escríbenos 24/7</span>
     </a>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=2.0"></script>
 </body>
 </html>
